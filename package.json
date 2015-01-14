@@ -10,5 +10,13 @@
   "license": "MIT",
   "dependencies": {
     "fluent-ffmpeg": ""
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/konsumer/easy-ffmpeg.git"
+  },
+  "bugs": {
+    "url": "http://github.com/konsumer/easy-ffmpeg/issues",
+    "email": "konsumer@jetboystudio.com"
+  },
 }

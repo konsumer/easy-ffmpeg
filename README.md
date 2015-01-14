@@ -1,6 +1,6 @@
 This has exactly the same interface as [node-fluent-ffmpeg](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg). It's a thin wrapper that includes binaries for mac, windows, and linux on 32 & 64 bit.
 
-Here is where I get my binaries:
+Here is where I get my static binaries:
 
 ```json
 {

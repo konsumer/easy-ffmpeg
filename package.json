@@ -1,0 +1,14 @@
+{
+  "name": "easy-ffmpeg",
+  "version": "0.0.1",
+  "description": "Fluent self-contained interface to ffmpeg",
+  "main": "index.js",
+  "keywords": [
+    "ffmpeg"
+  ],
+  "author": "David Konsumer <konsumer@jetboystudio.com>",
+  "license": "MIT",
+  "dependencies": {
+    "fluent-ffmpeg": ""
+  }
+}

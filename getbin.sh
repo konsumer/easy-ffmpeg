@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# this collects the binaries for uploading to releases
+
 VERSION='2.8.2'
 
 rm -rf ffmpeg
@@ -26,3 +28,7 @@ curl "http://ffmpeg.zeranoe.com/builds/win32/static/ffmpeg-$VERSION-win32-static
 cp ffmpeg-*-win32-static/bin/ffmpeg.exe ia32
 cp ffmpeg-*-win32-static/bin/ffmpeg.exe x64
 rm -rf ffmpeg.7z ffmpeg-*-win32-static
+
+cd ../..
+tar czf ffmpeg.tgz ffmpeg/ &&
+rm -rf ffmpeg

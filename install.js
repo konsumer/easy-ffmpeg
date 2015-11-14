@@ -3,7 +3,7 @@ var request = require('request')
 var fs = require('fs')
 
 request
-  .get('https://github.com/konsumer/easy-ffmpeg/releases/download/0.0.4/ffmpeg.tgz')
+  .get('https://github.com/konsumer/easy-ffmpeg/releases/download/0.0.8/ffmpeg.tgz')
   .on('error', function (err) {
     throw err
   })

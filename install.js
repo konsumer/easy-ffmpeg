@@ -11,5 +11,8 @@ request
   .on('close', function () {
     tarball.extractTarball('ffmpeg.tgz', __dirname, function (err, result) {
       if (err) throw err
+      fs.unlink('ffmpeg.tgz', function (err) {
+        if (err) throw err
+      })
     })
   })

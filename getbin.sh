@@ -5,7 +5,7 @@
 VERSION='2.8.2'
 
 rm -rf ffmpeg
-mkdir -p ffmpeg/linux/ia32 ffmpeg/linux/x64 ffmpeg/darwin/x64 ffmpeg/win32/ia32 ffmpeg/win32/x64
+mkdir -p ffmpeg/linux/ia32 ffmpeg/linux/x64 ffmpeg/darwin/x64 ffmpeg/win32/ia32
 
 cd ffmpeg/linux
 curl 'http://johnvansickle.com/ffmpeg/releases/ffmpeg-release-32bit-static.tar.xz' -o ffmpeg-32.tar.xz && 

@@ -1,5 +1,15 @@
 var tarball = require('tarball-extract')
+var request = require('request')
+var fs = require('fs')
 
-tarball.extractTarballDownload('https://github.com/konsumer/easy-ffmpeg/releases/download/0.0.3/ffmpeg.tgz', 'ffmpeg.tgz', __dirname, {}, function (err, result) {
-  if (err) throw err
-})
+request
+  .get('https://github.com/konsumer/easy-ffmpeg/releases/download/0.0.4/ffmpeg.tgz')
+  .on('error', function (err) {
+    throw err
+  })
+  .pipe(fs.createWriteStream('ffmpeg.tgz'))
+  .on('close', function () {
+    tarball.extractTarball('ffmpeg.tgz', __dirname, function (err, result) {
+      if (err) throw err
+    })
+  })

@@ -22,13 +22,12 @@ curl "http://evermeet.cx/ffmpeg/ffprobe-$VERSION.7z" -o ffprobe.7z
 7z e ffmpeg.7z && 
 7z e ffprobe.7z && 
 mv ffmpeg ffprobe x64
-rm ffmpeg.7z
+rm ffmpeg.7z ffprobe.7z
 
 cd ../win32
 curl "http://ffmpeg.zeranoe.com/builds/win32/static/ffmpeg-$VERSION-win32-static.7z" -o ffmpeg.7z &&
 7z x ffmpeg.7z
-cp ffmpeg-*-win32-static/bin/ffmpeg.exe ffmpeg-*-win32-static/bin/ffprobe.exe ia32
-cp ffmpeg-*-win32-static/bin/ffmpeg.exe ffmpeg-*-win32-static/bin/ffprobe.exe x64
+mv ffmpeg-*-win32-static/bin/ffmpeg.exe ffmpeg-*-win32-static/bin/ffprobe.exe ia32
 rm -rf ffmpeg.7z ffmpeg-*-win32-static
 
 cd ../..

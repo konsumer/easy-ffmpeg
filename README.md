@@ -16,8 +16,7 @@ Here is where I get my static binaries:
   },
 
   "win32": {
-    "ia32": "http://ffmpeg.zeranoe.com/builds/win32/static/ffmpeg-VERSION-win32-static.7z",
-    "x64": "http://ffmpeg.zeranoe.com/builds/win32/static/ffmpeg-VERSION-win32-static.7z"
+    "ia32": "http://ffmpeg.zeranoe.com/builds/win32/static/ffmpeg-VERSION-win32-static.7z"
   }
 }
 ```

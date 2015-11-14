@@ -8,6 +8,11 @@
   ],
   "author": "David Konsumer <konsumer@jetboystudio.com>",
   "license": "MIT",
+  "devDependencies": {
+    "mkpath": "^1.0.0",
+    "node-7z": "^0.3.0",
+    "request-promise": "^1.0.2"
+  },
   "dependencies": {
     "fluent-ffmpeg": ""
   },
@@ -18,5 +23,8 @@
   "bugs": {
     "url": "http://github.com/konsumer/easy-ffmpeg/issues",
     "email": "konsumer@jetboystudio.com"
+  },
+  "scripts": {
+    "bin": "./getbin.sh"
   }
 }

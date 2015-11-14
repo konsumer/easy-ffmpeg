@@ -5,18 +5,19 @@ Here is where I get my static binaries:
 ```json
 {
   "linux": {
-    "ia32": "http://johnvansickle.com/ffmpeg/releases/ffmpeg-2.5.3-32bit-static.tar.xz",
-    "x64": "http://johnvansickle.com/ffmpeg/releases/ffmpeg-2.5.3-64bit-static.tar.xz"
+    "ia32": "http://johnvansickle.com/ffmpeg/releases/ffmpeg-release-32bit-static.tar.xz",
+    "x64": "http://johnvansickle.com/ffmpeg/releases/ffmpeg-release-64bit-static.tar.xz"
   },
-  
+
   "darwin": {
-    "ia32": "http://ffmpegmac.net/resources/Leopard_01.01.2015.zip",
-    "x64": "http://ffmpegmac.net/resources/SnowLeopard_Lion_Mountain_Lion_Mavericks_Yosemite_01.01.2015.zip"
+    "x64": "http://evermeet.cx/pub/ffmpeg/ffmpeg-VERSION.7z"
   },
-  
+
   "win32": {
-    "ia32": "http://ffmpeg.zeranoe.com/builds/win32/static/ffmpeg-20150113-git-b23a866-win32-static.7z",
-    "x64": "http://ffmpeg.zeranoe.com/builds/win64/static/ffmpeg-20150113-git-b23a866-win64-static.7z"
+    "ia32": "http://ffmpeg.zeranoe.com/builds/win32/static/ffmpeg-VERSION-win32-static.7z",
+    "x64": "http://ffmpeg.zeranoe.com/builds/win32/static/ffmpeg-VERSION-win32-static.7z"
   }
 }
 ```
+
+If you want to download your own up-to-date versions, use `npm run bin`. You will need curl/7zip/tar binaries in your path, and you will need to be on linux or mac.

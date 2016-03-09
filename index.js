@@ -1,14 +1,12 @@
 var FfmpegCommand = require('fluent-ffmpeg')
 var path = require('path')
 
-var p = path.join(__dirname, 'ffmpeg', process.platform, arch, 'ffmpeg')
+// windows: 32bit / other: x64
+var arch = process.platform == 'win32' ? 'ia32' : 'x64';
 
-// only one platform  available, but works for both
-var arch = process.arch
-if (process.platform === 'win32') {
-  arch = 'ia32'
-  p += '.exe'
-}
+// only windows has an extension
+var ext = process.platform == 'win32' ? '.exe' : '';
 
-FfmpegCommand.setFfmpegPath(p)
-module.exports = FfmpegCommand
+FfmpegCommand.setFfmpegPath( path.join(__dirname, 'ffmpeg-' + process.platform, arch, 'ffmpeg' + ext) )
+
+module.exports = FfmpegCommand;

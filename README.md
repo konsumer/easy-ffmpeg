@@ -1,4 +1,4 @@
-This has exactly the same interface as [node-fluent-ffmpeg](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg). It's a thin wrapper that includes binaries for mac, windows, and linux on 32 & 64 bit.
+This has exactly the same interface as [node-fluent-ffmpeg](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg). It's a thin wrapper that includes binaries for mac, windows, and linux.
 
 You can install it with `npm install easy-ffmpeg`
 
@@ -7,7 +7,6 @@ Here is where I get my static binaries:
 ```json
 {
   "linux": {
-    "ia32": "http://johnvansickle.com/ffmpeg/releases/ffmpeg-release-32bit-static.tar.xz",
     "x64": "http://johnvansickle.com/ffmpeg/releases/ffmpeg-release-64bit-static.tar.xz"
   },
 

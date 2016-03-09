@@ -10,7 +10,7 @@ var tarball = require('tarball-extract'),
 var user = 'jaruba',
     tag = 'v0.0.1',
     repoName = 'ffmpeg-binaries',
-    package = 'ffmpeg' + process.platform + '.tgz';
+    package = 'ffmpeg-' + process.platform + '.tgz';
 
 var url = 'https://github.com/' + user + '/' + repoName + '/releases/download/' + tag + '/' + package;
 

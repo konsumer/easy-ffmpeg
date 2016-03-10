@@ -7,7 +7,7 @@ Here is where I get my static binaries:
 ```json
 {
   "linux": {
-    "x64": "http://johnvansickle.com/ffmpeg/releases/ffmpeg-release-64bit-static.tar.xz"
+    "ia32": "http://johnvansickle.com/ffmpeg/releases/ffmpeg-release-32bit-static.tar.xz"
   },
 
   "darwin": {

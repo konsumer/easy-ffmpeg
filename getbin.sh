@@ -5,12 +5,12 @@
 VERSION='2.8.2'
 
 rm -rf ffmpeg
-mkdir -p ffmpeg/linux/x64 ffmpeg/darwin/x64 ffmpeg/win32/ia32
+mkdir -p ffmpeg/linux/ia32 ffmpeg/darwin/x64 ffmpeg/win32/ia32
 
 cd ffmpeg/linux
-curl 'http://johnvansickle.com/ffmpeg/releases/ffmpeg-release-64bit-static.tar.xz' -o ffmpeg-64.tar.xz && 
-tar xf ffmpeg-64.tar.xz && 
-mv ffmpeg-*-64bit-static/ffmpeg ffmpeg-*-64bit-static/ffprobe x64
+curl 'http://johnvansickle.com/ffmpeg/releases/ffmpeg-release-32bit-static.tar.xz' -o ffmpeg-32.tar.xz && 
+tar xf ffmpeg-32.tar.xz && 
+mv ffmpeg-*-32bit-static/ffmpeg ffmpeg-*-32bit-static/ffprobe ia32
 rm -rf ffmpeg-*-*-static *.tar.xz
 
 cd ../darwin

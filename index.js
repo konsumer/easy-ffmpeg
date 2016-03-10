@@ -8,5 +8,6 @@ var arch = process.platform == 'darwin' ? 'x64' : 'ia32';
 var ext = process.platform == 'win32' ? '.exe' : '';
 
 FfmpegCommand.setFfmpegPath( path.join(__dirname, 'ffmpeg-' + process.platform, arch, 'ffmpeg' + ext) )
+FfmpegCommand.setFfprobePath( path.join(__dirname, 'ffmpeg-' + process.platform, arch, 'ffprobe' + ext) )
 
 module.exports = FfmpegCommand;

@@ -1,6 +1,6 @@
 {
   "name": "easy-ffmpeg",
-  "version": "0.0.10",
+  "version": "0.0.12",
   "description": "Fluent self-contained interface to ffmpeg",
   "main": "index.js",
   "keywords": [

@@ -7,9 +7,9 @@ var tarball = require('tarball-extract'),
 // var tag = '0.0.8'
 // var repoName = 'easy-ffmpeg';
 
-var user = 'jaruba',
-    tag = 'v0.0.1',
-    repoName = 'ffmpeg-binaries',
+var user = 'konsumer',
+    tag = '0.0.8',
+    repoName = 'easy-ffmpeg',
     package = 'ffmpeg-' + process.platform + '.tgz',
     counter = 0,
     errors = 0;

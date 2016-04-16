@@ -1,14 +1,26 @@
-var FfmpegCommand = require('fluent-ffmpeg')
-var path = require('path')
+var FfmpegCommand = require('fluent-ffmpeg'),
+    path = require('path'),
+    fs = require('fs');
 
-var p = path.join(__dirname, 'ffmpeg', process.platform, arch, 'ffmpeg')
+// osx: x64 / other: ia32
+var arch = process.platform == 'darwin' ? 'x64' : 'ia32';
 
-// only one platform  available, but works for both
-var arch = process.arch
-if (process.platform === 'win32') {
-  arch = 'ia32'
-  p += '.exe'
+// only windows has an extension
+var ext = process.platform == 'win32' ? '.exe' : '';
+
+try {
+
+    // this checks if the ffmpeg folder exists in our repo, if it doesn't it will return an error
+    fs.accessSync( path.join(__dirname, 'ffmpeg-' + process.platform) , fs.F_OK);
+
+    // folder exists so we need to load ffmpeg and ffprobe from our repo
+    FfmpegCommand.setFfmpegPath( path.join(__dirname, 'ffmpeg-' + process.platform, arch, 'ffmpeg' + ext) )
+    FfmpegCommand.setFfprobePath( path.join(__dirname, 'ffmpeg-' + process.platform, arch, 'ffprobe' + ext) )
+
+} catch (e) {
+    // folder does not exist, this means that ffmpeg and ffprobe
+    // wore found somewhere else during the install process
+    // fluent-ffmpeg will set the correct paths on it's own
 }
 
-FfmpegCommand.setFfmpegPath(p)
-module.exports = FfmpegCommand
+module.exports = FfmpegCommand;

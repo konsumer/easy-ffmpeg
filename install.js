@@ -3,7 +3,7 @@ var request = require('request')
 var fs = require('fs')
 
 var user = 'konsumer'
-var tag = '0.0.11'
+var tag = '0.0.12'
 var repoName = 'easy-ffmpeg'
 var pkg = 'ffmpeg-' + process.platform + '.tgz'
 var counter = 0
@@ -14,6 +14,8 @@ function downloader () {
   // we will download the one for our platform
 
   var url = 'https://github.com/' + user + '/' + repoName + '/releases/download/' + tag + '/' + pkg
+
+  console.log(url)
 
   request
     .get(url)

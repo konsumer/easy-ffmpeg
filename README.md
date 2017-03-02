@@ -1,6 +1,24 @@
 This has exactly the same interface as [node-fluent-ffmpeg](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg). It's a thin wrapper that includes binaries for mac, windows, and linux.
 
+## installation
+
 You can install it with `npm install easy-ffmpeg`
+
+## usage
+
+If you are already using [fluent-ffmpeg](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg), update your package.json and you are done.
+
+```js
+const ffmpeg = require('fluent-ffmpeg')
+```
+
+to
+
+```js
+const ffmpeg = require('easy-ffmpeg')
+```
+
+## more info
 
 Here is where I get my static binaries:
 

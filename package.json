@@ -12,7 +12,8 @@
   "dependencies": {
     "fluent-ffmpeg": "",
     "request": "^2.65.0",
-    "tarball-extract": "0.0.3"
+    "tarball-extract": "0.0.3",
+    "tar": "2.2.1"
   },
   "repository": {
     "type": "git",

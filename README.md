@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/konsumer/easy-ffmpeg.svg?branch=master)](https://travis-ci.org/konsumer/easy-ffmpeg)
+
 This has exactly the same interface as [node-fluent-ffmpeg](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg). It's a thin wrapper that includes binaries for mac, windows, and linux.
 
 ## installation

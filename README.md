@@ -4,6 +4,8 @@ This has exactly the same interface as [node-fluent-ffmpeg](https://github.com/f
 
 ## installation
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/konsumer/easy-ffmpeg.svg)](https://greenkeeper.io/)
+
 You can install it with `npm install easy-ffmpeg`
 
 ## usage

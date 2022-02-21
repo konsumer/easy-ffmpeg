@@ -10,10 +10,10 @@
   "license": "MIT",
   "devDependencies": {},
   "dependencies": {
+    "calladownload-extract": "^1.2.0",
     "fluent-ffmpeg": "",
     "request": "^2.65.0",
-    "tarball-extract": "0.0.6",
-    "tar": "6.0.0"
+    "tar": "^6.1.11"
   },
   "repository": {
     "type": "git",

@@ -1,4 +1,4 @@
-var tarball = require('tarball-extract')
+var tarball = require('calladownload-extract')
 var request = require('request')
 var fs = require('fs')
 

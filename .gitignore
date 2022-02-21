@@ -2,3 +2,5 @@ node_modules
 .DS_Store
 *.log
 ffmpeg/
+big_buck_bunny.mp4
+darwin/
